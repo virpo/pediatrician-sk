@@ -1,14 +1,14 @@
 import '../styles/globals.css'
 
-import { styled, alpha } from '@mui/material/styles';
+import { styled, alpha, createTheme, ThemeProvider } from '@mui/material/styles';
 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
+import Container from '@mui/material/Container';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
-import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 
 const Search = styled('div')(({ theme }) => ({
@@ -53,42 +53,97 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
+export const themeOptions = {
+  palette: {
+    type: 'light',
+    primary: {
+      main: '#0e2c3d',
+    },
+    secondary: {
+      main: '#f50057',
+    },
+    success: {
+      main: '#36AA56',
+    },
+    error: {
+      main: '#c62d2d',
+    },
+    warning: {
+      main: '#E8BA19',
+    },
+  },
+  typography: {
+    fontFamily: '"Source Sans Pro", "Helvetica", "Arial", sans-serif',
+    fontSize: 16,
+    h1: {
+      fontSize: '3rem',
+      fontWeight: '700'
+    },
+    h2: {
+      fontSize: '2.5rem',
+      fontWeight: '700'
+    },
+    h3: {
+      fontSize: '2rem',
+      fontWeight: '700'
+    },
+    h4: {
+      fontSize: '1.5rem',
+      fontWeight: '700'
+    },
+    h5: {
+      fontSize: '1.2rem',
+    },
+    h6: {
+      fontSize: '1rem',
+    },
+  },
+  overrides: {
+    MuiAppBar: {
+      colorInherit: {
+        backgroundColor: '#689f38',
+        color: '#fff',
+      },
+    },
+  },
+  shape: {
+    borderRadius: 2,
+  },
+};
+
+const theme = createTheme(themeOptions);
+
 function MyApp({ Component, pageProps }) {
-  return <>
+  return <ThemeProvider theme={theme}>
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-          >
-            MUI
-          </Typography>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
-        </Toolbar>
+        <Container maxWidth="lg">
+          <Toolbar>
+            <Typography
+              variant="h6"
+              noWrap
+              component="div"
+              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            >
+              Pediatri deťom
+            </Typography>
+            <Search>
+              <SearchIconWrapper>
+                <SearchIcon />
+              </SearchIconWrapper>
+              <StyledInputBase
+                placeholder="Search…"
+                inputProps={{ 'aria-label': 'search' }}
+              />
+            </Search>
+          </Toolbar>
+        </Container>
       </AppBar>
     </Box>
-    <Component {...pageProps} />
-  </>
+    <Container maxWidth="lg">
+      <Component {...pageProps} />
+    </Container>
+  </ThemeProvider>
 }
 
 export default MyApp
