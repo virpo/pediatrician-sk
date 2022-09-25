@@ -54,7 +54,7 @@ export default function Home() {
             {title: 'Duševné zdravie detí', emoji: '😵‍💫', link: '#'},
             {title: 'Administratívne - OČR, Potv., ...', emoji: '📄', link: '#'},
             {title: 'Horúčka u detí', emoji: '🌡', link: '/nad-3-mesiace/horucka'},
-            {title: 'Nový rodič', emoji: '🫄', link: '#'},
+            {title: 'Nový rodič', emoji: '🧑‍🍼', link: '#'},
             {title: 'Otestuj svoje vedomosti', emoji: '❓', link: '/kviz'},
           ].map((item, index) => <SplitItem title={item.title} emoji={item.emoji} link={item.link} key={index} />)
         }
