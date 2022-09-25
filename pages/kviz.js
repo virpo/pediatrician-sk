@@ -70,10 +70,10 @@ export default function Home(props) {
           {posts.map(post => {
             if (index === post.id) {
               return (  
-                <div className="marginTop">
+                <div key={post.id} className="marginTop">
                   <b>{index}./{NumQuestions}) {post.otazka}</b>
                   {answers.map((answer) =>
-                      <button className={"SecondaryButton "+StyleBackground[answer.id-1]} id={post.id} value={answer.id} onClick={() => isCorrect(answer.id,post.ans)}>{answer.odpoved}</button>
+                      <button key={index + answer.id} className={"SecondaryButton "+StyleBackground[answer.id-1]} id={post.id} value={answer.id} onClick={() => isCorrect(answer.id,post.ans)}>{answer.odpoved}</button>
                   )}      
                 </div>   
               )              
