@@ -67,10 +67,10 @@ export default function Home(props) {
     setOpen(true)  //open modal
   }
   if (isCorrectMessage==0) {
-    aler_message = <Alert severity="error" className="marginTop">Nesprvávna odpoveď</Alert>;
+    aler_message = <Alert severity="error" className="marginTop">Nesprávna odpoveď!</Alert>;
   } 
   if(isCorrectMessage==1) {
-    aler_message = <Alert severity="success" className="marginTop">Správna odpoveď</Alert>;
+    aler_message = <Alert severity="success" className="marginTop">Správna odpoveď!</Alert>;
   }
   
   return (
@@ -112,12 +112,12 @@ export default function Home(props) {
             {aler_message} 
             {isCorrectMessage != 3 && index<NumQuestions && 
             <div>
-              <Button onClick={() => handleClick()}>Dalšia otázka</Button>   
+              <Button variant="contained" onClick={() => handleClick()}>Dalšia otázka</Button>   
             </div>
             }
             {isCorrectMessage != 3  && index == NumQuestions && 
             <div>
-              <Button onClick={() => handleOpen()}>Vyhodnotenie</Button>   
+              <Button variant="contained"  onClick={() => handleOpen()}>Vyhodnotenie</Button>   
             </div>
             }
             {open &&
