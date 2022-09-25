@@ -127,7 +127,7 @@ export default function Home(props) {
                   <b>Váš výsledok je {sum}/{NumQuestions} otázok!</b><br></br>
                   Podeľ sa s týmto výsledkom  na socialnej sieti.
                   <br></br><br></br>                  
-                  <Box justifyContent="center" className="Sharetext">Moje skóre z 'Pediatri deťom' je {sum}/{NumQuestions}. Otestuj sa tiež na <a className="Alink" href="https://pediatrician.vercel.app/">Pediatri deťom</a></Box>
+                  <Box justifyContent="center" className="Sharetext">Moje skóre z 'Pediatri deťom' je {sum}/{NumQuestions}. Otestuj sa tiež na <a className="Alink">Pediatri deťom</a></Box>
 
                 </Typography>                
               </Grid>
