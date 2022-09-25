@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
 
+:root {
+  --green: #4ECB71;
+  --yellow: #E8BA19;
+  --red: #C62D2D;
+  --darkBlue: #0E2C3D;
+}
+.greenBcg{
+  background-color: var(--green);
+}
+.yellowBcg{
+  background-color: var(--yellow);
+}
+.redBcg{
+  background-color: var(--red);
+}
+
 html,
 body {
   padding: 0;
@@ -42,4 +58,15 @@ a {
 
 ul li {
   margin-bottom: 1rem;
+}
+
+.SecondaryButton {
+  border: 1px solid var(--darkBlue);
+  padding: 20px;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+}
+.marginTop {
+  margin-top: 10px;
 }
