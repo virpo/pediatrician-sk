@@ -87,14 +87,14 @@ export default function Home(props) {
             {posts.map((post, indexkey) => {
               if (index === post.id) {
                 return (  
-                  <Grid container spacing={2}>
+                  <Grid key={post.id} container spacing={2}>
                     <Grid item xs={12}>
                       <div key={post.id} className="marginTop">
                       <b>{index}./{NumQuestions}) {post.otazka}</b>
                         <Grid>                        
                           {answers.map((answer) =>
-                            <Grid item xs={12} md={4} className="floatleft">
-                              <button key={index + answer.id +10} className={"SecondaryButton "+StyleBackground[answer.id-1]} id={post.id} value={answer.id} onClick={() => isCorrect(answer.id,post.ans)}>{answer.odpoved}</button>
+                            <Grid key={index + answer.id} item xs={12} md={4} className="floatleft">
+                              <button key={index + answer.id} className={"SecondaryButton "+StyleBackground[answer.id-1]} id={post.id} value={answer.id} onClick={() => isCorrect(answer.id,post.ans)}>{answer.odpoved}</button>
                             </Grid>
                           )}     
                         </Grid> 
