@@ -112,12 +112,12 @@ export default function Home(props) {
             {aler_message} 
             {isCorrectMessage != 3 && index<NumQuestions && 
             <div>
-              <Button variant="contained" onClick={() => handleClick()}>Dalšia otázka</Button>   
+              <Button variant="contained" className="marginTop" onClick={() => handleClick()}>Dalšia otázka</Button>   
             </div>
             }
             {isCorrectMessage != 3  && index == NumQuestions && 
             <div>
-              <Button variant="contained"  onClick={() => handleOpen()}>Vyhodnotenie</Button>   
+              <Button variant="contained" className="marginTop"  onClick={() => handleOpen()}>Vyhodnotenie</Button>   
             </div>
             }
             {open &&
