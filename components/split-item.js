@@ -24,7 +24,7 @@ return <Grid item xs={6} sm={3}>
       <Typography variant="body1" sx={{ fontSize: '4rem' }}>
         {props.emoji}
       </Typography>
-      <Typography variant="h3" gutterBottom sx={{ flex: 1 }}>
+      <Typography variant="h3" sx={{ flex: 1 }}>
         {props.title}
       </Typography>
       <Typography underline>

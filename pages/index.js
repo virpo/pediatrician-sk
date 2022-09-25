@@ -20,7 +20,7 @@ export default function Home() {
         sx={{ my: 6 }}
       >
         <Grid item xs={12} sm={6}>
-          <Typography variant="h3" gutterBottom>
+          <Typography variant="h3">
             Všetko o zdraví vášho
             dieťaťa na jednom mieste
           </Typography>
@@ -63,7 +63,7 @@ export default function Home() {
       <Typography variant="h2" sx={{ pt: 8 }}>
         Kedy ísť na pohotovosť alebo volať 155?
       </Typography>
-      <Typography variant="h5" gutterBottom sx={{ mb: 6 }}>
+      <Typography variant="h5" sx={{ mb: 6 }}>
         Zavolajte s pokojom vášmu pediatrovi, ak má dieťa ktorýkoľvek z nasledujúcich príznakov.
       </Typography>
 
@@ -81,7 +81,7 @@ export default function Home() {
             <Typography variant="h2">
               S dieťaťom 0-3 mesiace
             </Typography>
-            <Typography variant="h5" gutterBottom sx={{ mb: 6 }}>
+            <Typography variant="h5" sx={{ mb: 6 }}>
               Má vaše dieťa <strong>ktorýkoľvek</strong> z nasledujúcich príznakov?
             </Typography>
             <Typography variant="body1">
@@ -114,7 +114,7 @@ export default function Home() {
             <Typography variant="h2">
               S dieťaťom nad 3 mesiace
             </Typography>
-            <Typography variant="h5" gutterBottom sx={{ mb: 6 }}>
+            <Typography variant="h5" sx={{ mb: 6 }}>
               Má dieťa <strong>ktorýkoľvek</strong> z nasledujúcich príznakov?
             </Typography>
             <Typography variant="body1">
@@ -152,7 +152,7 @@ export default function Home() {
             <Typography variant="h2">
               S dospievajúcim dieťatom
             </Typography>
-            <Typography variant="h5" gutterBottom sx={{ mb: 6 }}>
+            <Typography variant="h5" sx={{ mb: 6 }}>
               Má <strong>ktorýkoľvek</strong> z nasledujúcich príznakov?
             </Typography>
             <Typography variant="body1">

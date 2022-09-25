@@ -118,7 +118,7 @@ function MyApp({ Component, pageProps }) {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Container maxWidth="lg">
-          <Toolbar>
+          <Toolbar sx={{ p: '0 !important' }}>
             <Typography
               variant="h6"
               noWrap
@@ -132,7 +132,7 @@ function MyApp({ Component, pageProps }) {
                 <SearchIcon />
               </SearchIconWrapper>
               <StyledInputBase
-                placeholder="Search…"
+                placeholder="Hľadať"
                 inputProps={{ 'aria-label': 'search' }}
               />
             </Search>

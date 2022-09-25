@@ -48,7 +48,7 @@ export default function Home() {
             {title: 'Astmatický záchvat', emoji: '😮‍💨', link: '#'},
             {title: 'Zápal priedušiek', emoji: '🫁', link: '#'},
             {title: 'Ovčie kiahne', emoji: '🔴', link: '#'},
-            {title: 'Zapal spojiviek', emoji: '👁', link: '#'},
+            {title: 'Zápal spojiviek', emoji: '👁', link: '#'},
             {title: 'Zápcha', emoji: '🚽', link: '#'},
             {title: 'Kašeľ a prechladnutie', emoji: '😷', link: '#'},
             {title: 'Záškrt', emoji: '😫', link: '#'},

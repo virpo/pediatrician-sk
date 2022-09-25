@@ -46,10 +46,10 @@ export default function Home() {
         sx={{ my: 6 }}
       >
         <Grid item xs={12} sm={6}>
-          <Typography variant="h1" gutterBottom>
+          <Typography variant="h1">
             Horúčka 🌡
           </Typography>
-          <Typography variant="h5" gutterBottom sx={{ mb: 6 }}>
+          <Typography variant="h5" sx={{ mb: 6 }}>
             Čo robiť ked má dieťa horúčku?
           </Typography>
           <Typography variant="body1">
@@ -81,10 +81,10 @@ export default function Home() {
       >
         <Grid item xs={12} sm={6}>
           <InfoBlock color="yellow">
-            <Typography variant="h2" gutterBottom>
+            <Typography variant="h2">
               Stav nie je urgentný ak:
             </Typography>
-            <Typography variant="h5" gutterBottom sx={{ mb: 6 }}>
+            <Typography variant="h5" sx={{ mb: 6 }}>
               Zavolajte s pokojom vášmu pediatrovi, ak má dieťa ktorýkoľvek z nasledujúcich príznakov.
             </Typography>
             <Typography variant="body1">
@@ -108,10 +108,10 @@ export default function Home() {
 
         <Grid item xs={12} sm={6}>
           <InfoBlock color="red">
-            <Typography variant="h2" gutterBottom>
+            <Typography variant="h2">
               Stav je urgentný ak:
             </Typography>
-            <Typography variant="h5" gutterBottom sx={{ mb: 6 }}>
+            <Typography variant="h5" sx={{ mb: 6 }}>
               Navštívte pohotovosť, prípadne volajte 155, ak má dieťa ktorýkoľvek z nasledujúcich príznakov.
             </Typography>
             <Typography variant="body1">
@@ -134,7 +134,7 @@ export default function Home() {
             </Typography>
           </InfoBlock>
 
-          <Typography variant="h2" gutterBottom sx={{ mt: 6 }}>
+          <Typography variant="h2" sx={{ mt: 6 }}>
             Ako merať telesnú teplotu?
           </Typography>
           <Typography variant="body1">
@@ -154,7 +154,7 @@ export default function Home() {
         sx={{ my: 6 }}
       >
         <Grid item xs={12} sm={6}>
-          <Typography variant="h2" gutterBottom sx={{ mt: 6 }}>
+          <Typography variant="h2" sx={{ mt: 6 }}>
             Ako znižovať teplotu s liekmi?
           </Typography>
           <Typography variant="body1">
@@ -183,7 +183,7 @@ export default function Home() {
         </Grid>
 
         <Grid item xs={12} sm={6}>
-          <Typography variant="h2" gutterBottom sx={{ mt: 6 }}>
+          <Typography variant="h2" sx={{ mt: 6 }}>
             Ako znižovať horúčku bez liekov?
           </Typography>
           <Typography variant="body1">
