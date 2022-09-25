@@ -8,7 +8,7 @@
                 {"id":2,"ans":3,"otazka":" Ako budete reagovať ak: vaše 21 dňové dieťa má modrasté sfarbenie okolo úst alebo na končekoch prstov?"},
                 {"id":9,"ans":1,"otazka":"Ako budete reagovať ak: vaše ročné dieťa má triašku, ktorá trvá 20 minút. Iné príznaky ste nespozorovali."},
                 {"id":4,"ans":3,"otazka":"Ako budete reagovať ak: vaše dvojročné dieťa má nezvyčajne bledú, mramorovú kožu."},
-                {"id":10,"ans":1,"otazka":"Ako budete reagovať ak: vaša dvojročná dcéra má už tretí deň zvýšenú teplotu 37,8 stupňov celzia. Pozorujete číry výtok z nosa a občasný kašeľ."}],
+                {"id":10,"ans":1,"otazka":"Ako budete reagovať ak: vaša dvojročná dcéra má už tretí deň zvýšenú teplotu 37,8 stupňov celzia. Pozorujete číry výtok z nosa a občasný kašeľ."}],               
         "odpovede":[{"id":1,"odpoved":"Domáca liečba"},
                     {"id":2,"odpoved":"Kontaktovať lekára"},
                     {"id":3,"odpoved":"Urgent"}]

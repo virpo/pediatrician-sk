@@ -84,6 +84,15 @@ ul li {
   width: 100%;
   padding: 5px;
 }
+.Sharetext{
+  background: #f3f3f3;
+  width: 100%;
+  padding: 10px;
+}
+.Alink {
+  text-decoration: underline;
+  color: blue;
+}
 .footer {
   margin-top: 4rem;
   background-color: #F6F6F6;
