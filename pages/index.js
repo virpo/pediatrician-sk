@@ -14,7 +14,7 @@ export default function Home() {
 
       <Grid
         container
-        spacing={2}
+        spacing={8}
         justifyContent="center"
         alignItems="center"
         sx={{ my: 6 }}
