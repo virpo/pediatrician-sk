@@ -2,21 +2,26 @@ import '../styles/globals.css'
 
 import { styled, alpha, createTheme, ThemeProvider } from '@mui/material/styles';
 
+import Image from 'next/image'
+import logo from '/public/pedi.png'
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
-import IconButton from '@mui/material/IconButton';
+import Link from '@mui/material/Link';
+import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
+import GithubIcon from '@mui/icons-material/Github';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
+  backgroundColor: alpha(theme.palette.common.black, 0.04),
   '&:hover': {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
+    backgroundColor: alpha(theme.palette.common.black, 0.08),
   },
   marginLeft: 0,
   width: '100%',
@@ -57,7 +62,7 @@ export const themeOptions = {
   palette: {
     type: 'light',
     primary: {
-      main: '#0e2c3d',
+      main: '#ffffff',
     },
     secondary: {
       main: '#f50057',
@@ -119,14 +124,23 @@ function MyApp({ Component, pageProps }) {
       <AppBar position="static">
         <Container maxWidth="lg">
           <Toolbar sx={{ p: '0 !important' }}>
-            <Typography
-              variant="h6"
-              noWrap
-              component="div"
-              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-            >
-              Pediatri deťom
-            </Typography>
+            <Link underline="none" color="inherit" href="/" sx={{ flexGrow: 1 }}>
+              <Typography
+                variant="h6"
+                noWrap
+                component="div"
+              >
+                <div className='logo'>
+                  <Image
+                    src={logo}
+                    alt="Pediatri detom"
+                    width="48px"
+                    height="32px"
+                  />
+                  <strong>Pediatri deťom</strong>
+                </div>
+              </Typography>
+            </Link>
             <Search>
               <SearchIconWrapper>
                 <SearchIcon />
@@ -143,6 +157,17 @@ function MyApp({ Component, pageProps }) {
     <Container maxWidth="lg">
       <Component {...pageProps} />
     </Container>
+
+    <div className='footer'>
+      <Typography variant="body1">
+        <Link underline="always" color="inherit" href="https://github.com/virpo/pediatrician-sk">
+          <GithubIcon />
+        </Link>
+      </Typography>
+      <Typography variant="body1">
+        © 2022 HIWFFF
+      </Typography>
+    </div>
   </ThemeProvider>
 }
 

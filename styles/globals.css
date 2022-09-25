@@ -70,3 +70,22 @@ ul li {
 .marginTop {
   margin-top: 10px;
 }
+
+.footer {
+  margin-top: 4rem;
+  background-color: #F6F6F6;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  margin-right: 0.5rem !important;
+}
