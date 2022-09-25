@@ -15,6 +15,7 @@ import Container from '@mui/material/Container';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
+import Image from 'next/image'
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import AspectRatio from '@mui/joy/AspectRatio';
@@ -164,7 +165,7 @@ export default function Home(props) {
       </Box>
       <CardOverflow>
         <AspectRatio>
-          <img src="instagram.jpeg" alt="" />
+          <Image src="instagram.jpeg" alt="" />
         </AspectRatio>
       </CardOverflow>
       <Box sx={{ display: 'flex', alignItems: 'center', mx: -1, my: 1 }}>
