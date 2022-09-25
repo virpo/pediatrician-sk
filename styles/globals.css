@@ -81,6 +81,11 @@ ul li {
   align-items: center;
 }
 
+.footer svg {
+  width: 32px;
+  height: 32px;
+}
+
 .logo {
   display: flex;
   align-items: center;
