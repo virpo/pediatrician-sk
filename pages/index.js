@@ -30,7 +30,7 @@ export default function Home() {
         </Grid>
         <Grid item xs={12} sm={6}>
           <div className='video-container'>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/PV0svsPnsJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PV0svsPnsJ8?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </Grid>
       </Grid>
