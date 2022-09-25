@@ -165,7 +165,7 @@ export default function Home(props) {
       </Box>
       <CardOverflow>
         <AspectRatio>
-          <Image src="instagram.jpeg" alt="" />
+          <Image src="/instagram.jpeg" alt="" layout='fill' />
         </AspectRatio>
       </CardOverflow>
       <Box sx={{ display: 'flex', alignItems: 'center', mx: -1, my: 1 }}>
