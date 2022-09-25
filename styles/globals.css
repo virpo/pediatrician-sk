@@ -70,7 +70,20 @@ ul li {
 .marginTop {
   margin-top: 10px;
 }
-
+.centerText {
+  border: 1px solid var(--darkBlue);
+  text-align: center;
+  padding: 20px;
+}
+.kvizContainer {
+  padding: 20px;
+  margin-top: 20px;
+}
+.floatleft{
+  float:left;
+  width: 100%;
+  padding: 5px;
+}
 .footer {
   margin-top: 4rem;
   background-color: #F6F6F6;
