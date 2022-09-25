@@ -1,0 +1,15 @@
+{
+    "posts": [{"id":1,"ans":3,"otazka":"vaše dvojmesačné dieťa má suché plienky viac ako 8 hodín, teda nemočí?"},
+            {"id":2,"ans":3,"otazka":"vaše 21 dňové dievča má modrasté sfarbenie okolo úst, alebo na končekoch prstov?"},
+            {"id":3,"ans":3,"otazka":"vaše 2,5 mesačné dieťa má zvracanie zeleného obsahu?"},
+            {"id":4,"ans":3,"otazka":"vaše dvojročné dieťa má nazvyčajne bledú, mramorovú kožu"},
+            {"id":5,"ans":2,"otazka":"váš dvojmesačný chlapec ťažšie dýcha, čo ste spozorovali tak, že sa mu rozťahuje noštek, vťahuje krčná jamka a svalov pod rebrami. Miesta mi sa vás zdá, že jeho kašj pripomína štekanie."},
+            {"id":6,"ans":2,"otazka":"vaša jendomesačná dcéra má zhoršujúcu žltačku, ktorú pozorujete na žltnúcich očných bielkach, na tvári a na hrudníku."},
+            {"id":7,"ans":2,"otazka":"máte obavy, že sa vášmu 3 mesačnému dieťaťu rýchlo zhoršuje zdravotný stav."},
+            {"id":8,"ans":1,"otazka":"vašemu dieťaťu nameráte teplotu 37,9 stupňov celzia."},
+            {"id":9,"ans":1,"otazka":"vaše ročné dieťa má triašku, ktorá trvá 20 minút. Iné príznaky ste nepozorovali."},
+            {"id":10,"ans":1,"otazka":"vaša dvojročná dcéra má už tretí deň zvýšenú teplotu 37,8 stupňov celzia. Pozorujete číry výtok z nosa a občastný kašel."}],
+    "odpovede":[{"id":1,"odpoved":"Domáca liečba"},
+                {"id":2,"odpoved":"Kontaktovať lekára"},
+                {"id":3,"odpoved":"Urgent"}]
+}
