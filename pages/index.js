@@ -14,7 +14,7 @@ export default function Home() {
 
       <Grid
         container
-        spacing={2}
+        spacing={8}
         justifyContent="center"
         alignItems="center"
         sx={{ my: 6 }}
@@ -30,7 +30,7 @@ export default function Home() {
         </Grid>
         <Grid item xs={12} sm={6}>
           <div className='video-container'>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ECvpav9c1TM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PV0svsPnsJ8?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </Grid>
       </Grid>
@@ -55,7 +55,7 @@ export default function Home() {
             {title: 'Administratívne - OČR, Potv., ...', emoji: '📄', link: '#'},
             {title: 'Horúčka u detí', emoji: '🌡', link: '/nad-3-mesiace/horucka'},
             {title: 'Nový rodič', emoji: '🫄', link: '#'},
-            {title: 'Otestuj svoje vedomosti', emoji: '❓', link: '#'},
+            {title: 'Otestuj svoje vedomosti', emoji: '❓', link: '/kviz'},
           ].map((item, index) => <SplitItem title={item.title} emoji={item.emoji} link={item.link} key={index} />)
         }
       </Grid>

@@ -70,7 +70,7 @@ ul li {
 .marginTop {
   margin-top: 10px;
 }
-.centerText { 
+.centerText {
   border: 1px solid var(--darkBlue);
   text-align: center;
   padding: 20px;

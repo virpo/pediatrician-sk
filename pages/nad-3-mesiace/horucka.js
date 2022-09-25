@@ -79,8 +79,30 @@ export default function Home() {
         justifyContent="center"
         sx={{ my: 6 }}
       >
-        <Grid item xs={12} sm={6}>
-          <InfoBlock color="yellow">
+
+        <Grid item xs={12} sm={12}>
+          <InfoBlock color="red">
+            <Typography variant="h2">
+              Stav je urgentný ak:
+            </Typography>
+            <Typography variant="h5" sx={{ mb: 6 }}>
+              Navštívte pohotovosť, prípadne volajte 155, ak má dieťa ktorýkoľvek z nasledujúcich príznakov.
+            </Typography>
+            <Typography variant="body1">
+              <ul>
+                <li>ťažkosti s dýchaním, modré pery</li>
+                <li>prvýkrát kŕče z horúčky (febrilné kŕče)</li>
+                <li>horúčku nad 40 °C</li>
+                <li>horúčku nad 38 °C a je mladšie ako 2 mesiace</li>
+                <li>stuhnutú šiju napr. nevie</li>
+                <li>predkloniť hlavu</li>
+                <li>drobné, bodkovité krvácania v koži (tzv. petéchie)</li>
+                <li>nízky príjem tekutín napr. odmieta piť</li>
+              </ul>
+            </Typography>
+          </InfoBlock>
+
+          <InfoBlock color="yellow" topGap={4}>
             <Typography variant="h2">
               Stav nie je urgentný ak:
             </Typography>
@@ -104,46 +126,12 @@ export default function Home() {
               </ul>
             </Typography>
           </InfoBlock>
-        </Grid>
-
-        <Grid item xs={12} sm={6}>
-          <InfoBlock color="red">
-            <Typography variant="h2">
-              Stav je urgentný ak:
-            </Typography>
-            <Typography variant="h5" sx={{ mb: 6 }}>
-              Navštívte pohotovosť, prípadne volajte 155, ak má dieťa ktorýkoľvek z nasledujúcich príznakov.
-            </Typography>
-            <Typography variant="body1">
-              <ul>
-                <li>ťažkosti s dýchaním, modré pery</li>
-                <li>prvýkrát kŕče z horúčky (febrilné kŕče)</li>
-                <li>horúčku nad 40 °C</li>
-                <li>horúčku nad 38 °C a je mladšie ako 2 mesiace</li>
-                <li>stuhnutú šiju napr. nevie</li>
-                <li>predkloniť hlavu</li>
-                <li>drobné, bodkovité krvácania v koži (tzv. petéchie)</li>
-                <li>nízky príjem tekutín napr. odmieta piť</li>
-              </ul>
-            </Typography>
-          </InfoBlock>
 
           <InfoBlock color="green" topGap={4}>
             <Typography variant="body1">
               <strong>Ak nie sú prítomné žiadne z predošlých príznakov, je čas na samoliečbu.</strong>
             </Typography>
           </InfoBlock>
-
-          <Typography variant="h2" sx={{ mt: 6 }}>
-            Ako merať telesnú teplotu?
-          </Typography>
-          <Typography variant="body1">
-            <ul>
-              <li><strong>v podpazuší</strong> – axilárne horúčka je teplota <strong>vyššia ako 38°C</strong></li>
-              <li><strong>v uchu</strong> – tympanálne horúčka je teplota <strong>vyššia ako 38°C</strong></li>
-              <li><strong>v konečníku</strong> – rektálne horúčka je teplota <strong>vyššia ako 38,5°C</strong></li>
-            </ul>
-          </Typography>
         </Grid>
       </Grid>
 
@@ -194,6 +182,17 @@ export default function Home() {
               <li>Tieto postupy použite ak liečba liekmi nepomáha, alebo je horúčka vyššia ako 39 °C.</li>
             </ul>
             <strong>POZOR:</strong> Ochladzovanie tela vlažnou vodou nerobte, ak má dieťa studené končatiny – dlane a chodidlá.
+          </Typography>
+
+          <Typography variant="h2" sx={{ mt: 6 }}>
+            Ako merať telesnú teplotu?
+          </Typography>
+          <Typography variant="body1">
+            <ul>
+              <li><strong>v podpazuší</strong> – axilárne horúčka je teplota <strong>vyššia ako 38°C</strong></li>
+              <li><strong>v uchu</strong> – tympanálne horúčka je teplota <strong>vyššia ako 38°C</strong></li>
+              <li><strong>v konečníku</strong> – rektálne horúčka je teplota <strong>vyššia ako 38,5°C</strong></li>
+            </ul>
           </Typography>
         </Grid>
       </Grid>
